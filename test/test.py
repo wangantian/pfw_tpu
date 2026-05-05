@@ -7,14 +7,14 @@ from cocotb.triggers import ClockCycles, RisingEdge
 
 
 async def reset_dut(dut):
-    """Apply reset for 1 cycle then release."""
+    """Apply reset for 5 cycle then release."""
     dut.ena.value = 1
     dut.ui_in.value = 0
     dut.uio_in.value = 0
     dut.rst_n.value = 0
-    await ClockCycles(dut.clk, 1)
+    await ClockCycles(dut.clk, 5)
     dut.rst_n.value = 1
-    await ClockCycles(dut.clk, 1)
+    await ClockCycles(dut.clk, 5)
 
 
 async def load_matrix(dut, matrix, transpose=0, relu=0):
