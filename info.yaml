@@ -10,10 +10,10 @@ project:
   tiles: "1x2"
 
   # Module name must start with tt_um_ and be unique (include your GitHub username)
-  top_module: "tt_um_example"
+  top_module: "tt_um_pfw_tpu"
 
   source_files:
-    - "project.v"
+    - "tt_um_pfw_tpu.v"
     - "systolic_array_2x2.v"
     - "PE.v"
     - "memory.v"

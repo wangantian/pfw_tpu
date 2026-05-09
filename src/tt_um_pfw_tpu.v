@@ -9,7 +9,7 @@
 
 `default_nettype none
 
-module tt_um_example (
+module tt_um_pfw_tpu (
     input  wire [7:0] ui_in,    // Dedicated inputs: matrix data (8-bit signed elements)
     output wire [7:0] uo_out,   // Dedicated outputs: result data (8-bit half of 16-bit output)
     input  wire [7:0] uio_in,   // IOs: Input path (control signals)
